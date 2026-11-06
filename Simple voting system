@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Simple Voting System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Simple Voting System</h1>
+        <p>Cast your vote and make your choice count!</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Voting Section -->
+        <section class="voting-section">
+
+            <h2>Choose Your Candidate</h2>
+
+            <form id="voteForm">
+
+                <div class="candidate">
+                    <input type="radio" name="candidate"
+                           value="Aarav Sharma" required>
+                    <label>Aarav Sharma</label>
+                </div>
+
+                <div class="candidate">
+                    <input type="radio" name="candidate"
+                           value="Diya Verma">
+                    <label>Diya Verma</label>
+                </div>
+
+                <div class="candidate">
+                    <input type="radio" name="candidate"
+                           value="Kabir Singh">
+                    <label>Kabir Singh</label>
+                </div>
+
+                <button type="submit">Submit Vote</button>
+
+            </form>
+
+            <p id="message"></p>
+
+        </section>
+
+        <!-- Results Section -->
+        <section class="result-section">
+
+            <h2>Voting Results</h2>
+
+            <div id="results"></div>
+
+            <h3 id="totalVotes">Total Votes: 0</h3>
+
+            <button id="resetButton" class="reset">
+                Reset Voting
+            </button>
+
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Simple Voting System | Student Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
